@@ -8,7 +8,7 @@
   <script defer src="script.js"></script>
 </head>
 <body>
-<header>
+<header class="glass-header">
   <div class="logo">Riya Vadadoria</div>
   <nav class="nav-links">
     <a href="index.html" class="active">Home</a>
@@ -16,14 +16,14 @@
     <a href="projects.html">Projects</a>
     <a href="contact.html">Contact</a>
   </nav>
-  <div class="toggle-theme">
+  <div class="theme-toggle">
     <input type="checkbox" id="themeToggle" />
     <label for="themeToggle"></label>
   </div>
   <div class="hamburger">☰</div>
 </header>
 
-<canvas id="bg"></canvas>
+<canvas id="blobCanvas"></canvas>
 
 <section class="home fade-in">
   <h1>Hi, I'm <span>Riya Vadadoria</span></h1>
@@ -31,6 +31,7 @@
   <a href="projects.html" class="btn">View My Work</a>
 </section>
 
+<div class="cursor"></div>
 <button id="scrollTop">↑</button>
 </body>
 </html>
