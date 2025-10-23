@@ -1,0 +1,1 @@
+const roles=['Data Scientist','AI Enthusiast','Developer'];let i=0;setInterval(()=>{const t=document.querySelector('.typing');if(t){t.textContent=roles[i];i=(i+1)%roles.length;}},2000);
