@@ -1,6 +1,41 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact - Riya Vadadoria</title><link rel="stylesheet" href="style.css"><script defer src="script.js"></script></head>
-<body><header><div class="logo">Riya Vadadoria</div><nav class="nav-links">
-<a href="index.html">Home</a><a href="about.html">About Me</a><a href="projects.html">Projects</a><a href="contact.html" class="active">Contact</a></nav><div class="hamburger">☰</div></header>
-<section class="contact"><h1>Contact Me</h1><form id="contactForm"><input type="text" id="name" placeholder="Your Name" required><input type="email" id="email" placeholder="Your Email" required><textarea id="message" placeholder="Your Message" required></textarea><button type="submit" class="btn">Send</button></form></section></body></html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Riya Vadadoria</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+<header>
+  <div class="logo">Riya Vadadoria</div>
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html" class="active">Contact</a>
+  </nav>
+  <div class="toggle-theme">
+    <input type="checkbox" id="themeToggle" />
+    <label for="themeToggle"></label>
+  </div>
+  <div class="hamburger">☰</div>
+</header>
+
+<section class="contact fade-in">
+  <div class="glass-card form-card">
+    <h1>Contact Me</h1>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send</button>
+    </form>
+    <div class="socials">
+      <a href="#">LinkedIn</a> | <a href="#">GitHub</a> | <a href="mailto:riya@example.com">Email</a>
+    </div>
+  </div>
+</section>
+</body>
+</html>
