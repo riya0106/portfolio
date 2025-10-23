@@ -1,1 +1,5 @@
-const roles=['Data Scientist','AI Enthusiast','Developer'];let i=0;setInterval(()=>{const t=document.querySelector('.typing');if(t){t.textContent=roles[i];i=(i+1)%roles.length;}},2000);
+const hamburger=document.querySelector('.hamburger');const nav=document.querySelector('.nav-links');const scrollTopBtn=document.getElementById('scrollTop');if(hamburger){hamburger.addEventListener('click',()=>nav.classList.toggle('active'));}
+window.addEventListener('scroll',()=>{if(window.scrollY>300){scrollTopBtn.style.display='block';}else{scrollTopBtn.style.display='none';}});
+scrollTopBtn.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+const roles=['Data Scientist','AI Enthusiast','Developer'];let i=0;const typing=document.querySelector('.typing');if(typing){setInterval(()=>{typing.textContent=roles[i];i=(i+1)%roles.length;},2000);}
+const form=document.getElementById('contactForm');if(form){form.addEventListener('submit',e=>{e.preventDefault();alert('Message sent successfully!');form.reset();});}
